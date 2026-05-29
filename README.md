@@ -1,9 +1,6 @@
 # CodePostmortem
 
-> Give your GitHub repo a doctor's checkup. Paste a URL → get a health grade, trend charts, and an AI-generated postmortem.
-
-![CodePostmortem demo](https://via.placeholder.com/900x500/0d1117/58a6ff?text=Add+a+screenshot+here)
-
+ 
 ## Features
 
 - **Health grade (A–F)** based on churn rate and tech debt analysis
