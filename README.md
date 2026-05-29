@@ -20,58 +20,7 @@
 | AI analysis | Anthropic Claude API |
 | Database | PostgreSQL |
 
-## Getting started
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/YOUR_USERNAME/codepostmortem.git
-cd codepostmortem
-```
-
-### 2. Set up environment variables
-
-```bash
-cp .env.example .env
-```
-
-Then open `.env` and fill in:
-
-- `GITHUB_TOKEN` — create one at https://github.com/settings/tokens (select `public_repo`)
-- `ANTHROPIC_API_KEY` — get one at https://console.anthropic.com/
-- `DATABASE_URL` — your PostgreSQL connection string
-
-### 3. Set up the database
-
-```bash
-# Create the database
-createdb codepostmortem
-
-# Run the schema
-psql -U postgres -d codepostmortem -f server/src/db/schema.sql
-```
-
-### 4. Install dependencies
-
-```bash
-cd server && npm install
-cd ../client && npm install
-```
-
-### 5. Run the app
-
-Open two terminals:
-
-```bash
-# Terminal 1 — backend
-cd server && npm run dev
-
-# Terminal 2 — frontend
-cd client && npm start
-```
-
-Visit http://localhost:3000 and paste any public GitHub repo URL.
-
+ 
 ## How it works
 
 1. You paste a GitHub repo URL
